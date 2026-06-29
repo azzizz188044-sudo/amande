@@ -1,0 +1,1070 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Amande Restaurant | Eng Mazali Taomlar | Samarqand</title>
+
+  <meta name="description" content="Amande Restoran Samarqandda joylashgan zamonaviy va shinam restoran. Mazali milliy va yevropa taomlari, qulay manzil va yuqori sifatli xizmat.">
+
+  <meta name="keywords" content="Amande, Amande Restoran, Amande Samarqand, restoran Samarqand, eng yaxshi restoran, Samarqand restoran">
+
+  <meta name="author" content="Amande Restoran">
+
+  <meta name="robots" content="index, follow">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="canonical" href="https://amande.uz/">
+
+  <!-- Open Graph (Facebook, Telegram preview) -->
+  <meta property="og:title" content="Amande Restoran | Samarqand">
+  <meta property="og:description" content="Samarqanddagi eng shinam restoranlardan biri. Shinam muhit va tezkor xizmat har bir taom mehr bilan tayyorlanadi">
+  <meta property="og:image" content="https://amande.uz/static/assets/img/banner.jpg">
+  <meta property="og:url" content="https://amande.uz/">
+  <meta property="og:type" content="website">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Amande Restoran | Samarqand">
+  <meta name="twitter:description" content="Samarqanddagi eng shinam restoranlardan biri. Shinam muhit va tezkor xizmat har bir taom mehr bilan tayyorlanadi">
+  <meta name="twitter:image" content="https://amande.uz/static/assets/img/banner.jpg">
+
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/aos/aos.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+
+
+  <!-- Main CSS File -->
+  <link rel="stylesheet" href="{% static 'assets/css/main.css' %}">
+  <link rel="icon" href="{% static 'assets/img/logooo.png' %}">
+
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Restaurant",
+      "name": "Amande Restoran",
+      "image": "https://amande.uz/static/assets/img/banner.jpg",
+      "url": "https://amande.uz",
+      "telephone": "+998906440707",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Samarqand",
+        "addressCountry": "UZ"
+      },
+      "servesCuisine": ["Uzbek", "European"],
+      "priceRange": "$$"
+    }
+    </script>
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="/icon.png">
+</head>
+
+<body class="index-page">
+  <marquee direction="right">Sayt test rejimida</marquee>
+  <header id="header" class="header fixed-top">
+
+    <div class="topbar d-flex align-items-center">
+      <div class="container d-flex justify-content-center justify-content-md-between">
+        <div class="contact-info d-flex align-items-center">
+          <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:ergashevazizdev@gmail.com">ergashevazizdev@gmail.com</a></i>
+          <i class="bi bi-phone d-flex align-items-center ms-4"><span>+998 (90) 644-07-07</span></i>
+        </div>
+<!--        <div class="languages d-none d-md-flex align-items-center">-->
+<!--          <ul>-->
+<!--            <li>En</li>-->
+<!--            <li><a href="#">De</a></li>-->
+<!--          </ul>-->
+<!--        </div>-->
+      </div>
+    </div><!-- End Top Bar -->
+
+    <div class="branding d-flex align-items-cente">
+
+      <div class="container position-relative d-flex align-items-center justify-content-between">
+        <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+          <!-- Uncomment the line below if you also wish to use an image logo -->
+          <!-- <img src="assets/img/logo.png" alt=""> -->
+          <img src="{% static 'assets/img/logooo.png' %}" alt="" width="70px" height="100px">
+
+        </a>
+
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <li><a href="#hero" class="active">Bosh sahifa<br></a></li>
+            <li><a href="#about">Biz haqimizda</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#testimonials">Fikrlar</a></li>
+<!--            <li><a href="#specials">Specials</a></li>-->
+<!--            <li><a href="#events">Events</a></li>-->
+<!--            <li><a href="#chefs">Chefs</a></li>-->
+            <li><a href="#gallery">Galleriya</a></li>
+<!--            <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>-->
+<!--              <ul>-->
+<!--                <li><a href="#">Dropdown 1</a></li>-->
+<!--                <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>-->
+<!--                  <ul>-->
+<!--                    <li><a href="#">Deep Dropdown 1</a></li>-->
+<!--                    <li><a href="#">Deep Dropdown 2</a></li>-->
+<!--                    <li><a href="#">Deep Dropdown 3</a></li>-->
+<!--                    <li><a href="#">Deep Dropdown 4</a></li>-->
+<!--                    <li><a href="#">Deep Dropdown 5</a></li>-->
+<!--                  </ul>-->
+<!--                </li>-->
+<!--                <li><a href="#">Dropdown 2</a></li>-->
+<!--                <li><a href="#">Dropdown 3</a></li>-->
+<!--                <li><a href="#">Dropdown 4</a></li>-->
+<!--              </ul>-->
+<!--            </li>-->
+            <li><a href="#contact">Bog'lanish</a></li>
+          </ul>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
+
+        <a class="btn-book-a-table d-none d-xl-block" href="tel:+998906440707">Bron qilish</a>
+
+      </div>
+
+    </div>
+
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background">
+
+      <img src="{% static 'assets/img/hero-bg.jpg' %}" alt="" data-aos="fade-in">
+
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 d-flex flex-column align-items-center align-items-lg-start">
+            <h2 data-aos="fade-up" data-aos-delay="100"><span>Amande</span> Restaraniga xush kelibsiz</h2>
+            <p data-aos="fade-up" data-aos-delay="200">Haqiqiy tamni Amande Restaranida his qiling</p>
+            <div class="d-flex mt-4" data-aos="fade-up" data-aos-delay="300">
+              <a href="#menu" class="cta-btn">Menu</a>
+              <a href="tel:+998906440707" class="cta-btn">Bron qilish</a>
+            </div>
+          </div>
+          <div class="col-lg-4 d-flex align-items-center justify-content-center mt-5 mt-lg-0">
+            <a href="https://youtu.be/R27A-CXVOgw" class="glightbox pulsating-play-btn"></a>
+          </div>
+        </div>
+      </div>
+
+    </section><!-- /Hero Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+          <div class="col-lg-6 order-1 order-lg-2">
+            <img src="{% static 'assets/img/about.jpg' %}" class="img-fluid about-img" alt="">
+          </div>
+          <div class="col-lg-6 order-2 order-lg-1 content">
+            <h3>Mazali taomlar va unutilmas muhit</h3>
+            <p class="fst-italic">
+              Amande restorani sizni iliq muhit va mazali taomlar bilan kutib oladi. Bu yerda har bir mehmon o‘zini alohida his qiladi va har bir taom mehr bilan tayyorlanadi.
+            </p>
+            <ul>
+              <li><i class="bi bi-check2-all"></i> <span>Tajribali oshpazlar tomonidan tayyorlangan maxsus menyu</span></li>
+              <li><i class="bi bi-check2-all"></i> <span>Oila va do‘stlar uchun ideal muhit</span></li>
+              <li><i class="bi bi-check2-all"></i> <span>Yuqori sifatli xizmat va tezkor servis</span></li>
+            </ul>
+            <p>
+              Amande restorani — bu nafaqat ovqatlanish joyi, balki do‘stlar va oila davrasida maroqli vaqt o‘tkazish uchun yaratilgan maskan. Biz sizga yuqori sifatli mahsulotlardan tayyorlangan milliy va zamonaviy taomlarni taklif etamiz.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /About Section -->
+
+    <!-- Why Us Section -->
+    <section id="why-us" class="why-us section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Nimaga biz ?</h2>
+        <p>Bizning foydali tamonlarimiz</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="card-item">
+              <span>01</span>
+              <h4><a href="" class="stretched-link">Sifatli taomlar</a></h4>
+              <p>Biz faqat yangi va sifatli mahsulotlardan foydalanamiz. Har bir taom tajribali oshpazlar tomonidan mehr bilan tayyorlanadi.</p>
+            </div>
+          </div><!-- Card Item -->
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="card-item">
+              <span>02</span>
+              <h4><a href="" class="stretched-link">Qulay muhit</a></h4>
+              <p>Zamonaviy va shinam interyerimiz sizga oila va do‘stlar bilan maroqli vaqt o‘tkazish imkonini beradi.</p>
+            </div>
+          </div><!-- Card Item -->
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="card-item">
+              <span>03</span>
+              <h4><a href="" class="stretched-link">Yuqori darajadagi xizmat</a></h4>
+              <p>Har bir mehmonimizga e’tibor bilan xizmat ko‘rsatamiz va sizning mamnunligingiz biz uchun eng muhimdir.</p>
+            </div>
+          </div><!-- Card Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Why Us Section -->
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Menu</h2>
+        <p>Bizning mazzali menuyimiz</p>
+      </div><!-- End Section Title -->
+
+      <div class="container isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+        <div class="row" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul class="menu-filters isotope-filters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-starters">Starters</li>
+              <li data-filter=".filter-salads">Salads</li>
+              <li data-filter=".filter-specialty">Specialty</li>
+            </ul>
+          </div>
+        </div><!-- Menu Filters -->
+
+        <div class="row isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+          <div class="col-lg-6 menu-item isotope-item filter-starters">
+            <img src="{% static 'assets/img/menu/lobster-bisque.jpg' %}" class="menu-img" alt="">
+            <div class="menu-content">
+              <a href="#">Lobster Bisque</a><span>$5.95</span>
+            </div>
+            <div class="menu-ingredients">
+              Lorem, deren, trataro, filede, nerada
+            </div>
+          </div><!-- Menu Item -->
+
+          <div class="col-lg-6 menu-item isotope-item filter-specialty">
+            <img src="{% static 'assets/img/menu/bread-barrel.jpg' %}" class="menu-img" alt="">
+            <div class="menu-content">
+              <a href="#">Bread Barrel</a><span>$6.95</span>
+            </div>
+            <div class="menu-ingredients">
+              Lorem, deren, trataro, filede, nerada
+            </div>
+          </div><!-- Menu Item -->
+
+          <div class="col-lg-6 menu-item isotope-item filter-starters">
+            <img src="assets/img/menu/cake.jpg" class="menu-img" alt="">
+            <div class="menu-content">
+              <a href="#">Crab Cake</a><span>$7.95</span>
+            </div>
+            <div class="menu-ingredients">
+              A delicate crab cake served on a toasted roll with lettuce and tartar sauce
+            </div>
+          </div><!-- Menu Item -->
+
+          <div class="col-lg-6 menu-item isotope-item filter-salads">
+            <img src="assets/img/menu/caesar.jpg" class="menu-img" alt="">
+            <div class="menu-content">
+              <a href="#">Caesar Selections</a><span>$8.95</span>
+            </div>
+            <div class="menu-ingredients">
+              Lorem, deren, trataro, filede, nerada
+            </div>
+          </div><!-- Menu Item -->
+
+          <div class="col-lg-6 menu-item isotope-item filter-specialty">
+            <img src="assets/img/menu/tuscan-grilled.jpg" class="menu-img" alt="">
+            <div class="menu-content">
+              <a href="#">Tuscan Grilled</a><span>$9.95</span>
+            </div>
+            <div class="menu-ingredients">
+              Grilled chicken with provolone, artichoke hearts, and roasted red pesto
+            </div>
+          </div><!-- Menu Item -->
+
+          <div class="col-lg-6 menu-item isotope-item filter-starters">
+            <img src="assets/img/menu/mozzarella.jpg" class="menu-img" alt="">
+            <div class="menu-content">
+              <a href="#">Mozzarella Stick</a><span>$4.95</span>
+            </div>
+            <div class="menu-ingredients">
+              Lorem, deren, trataro, filede, nerada
+            </div>
+          </div><!-- Menu Item -->
+
+          <div class="col-lg-6 menu-item isotope-item filter-salads">
+            <img src="assets/img/menu/greek-salad.jpg" class="menu-img" alt="">
+            <div class="menu-content">
+              <a href="#">Greek Salad</a><span>$9.95</span>
+            </div>
+            <div class="menu-ingredients">
+              Fresh spinach, crisp romaine, tomatoes, and Greek olives
+            </div>
+          </div><!-- Menu Item -->
+
+          <div class="col-lg-6 menu-item isotope-item filter-salads">
+            <img src="assets/img/menu/spinach-salad.jpg" class="menu-img" alt="">
+            <div class="menu-content">
+              <a href="#">Spinach Salad</a><span>$9.95</span>
+            </div>
+            <div class="menu-ingredients">
+              Fresh spinach with mushrooms, hard boiled egg, and warm bacon vinaigrette
+            </div>
+          </div><!-- Menu Item -->
+
+          <div class="col-lg-6 menu-item isotope-item filter-specialty">
+            <img src="assets/img/menu/lobster-roll.jpg" class="menu-img" alt="">
+            <div class="menu-content">
+              <a href="#">Lobster Roll</a><span>$12.95</span>
+            </div>
+            <div class="menu-ingredients">
+              Plump lobster meat, mayo and crisp lettuce on a toasted bulky roll
+            </div>
+          </div><!-- Menu Item -->
+
+        </div><!-- Menu Container -->
+
+      </div>
+
+    </section><!-- /Menu Section -->
+
+    <!-- Specials Section -->
+<!--    <section id="specials" class="specials section">-->
+
+<!--      &lt;!&ndash; Section Title &ndash;&gt;-->
+<!--      <div class="container section-title" data-aos="fade-up">-->
+<!--        <h2>Specials</h2>-->
+<!--        <p>Check Our Specials</p>-->
+<!--      </div>&lt;!&ndash; End Section Title &ndash;&gt;-->
+
+<!--      <div class="container" data-aos="fade-up" data-aos-delay="100">-->
+
+<!--        <div class="row">-->
+<!--          <div class="col-lg-3">-->
+<!--            <ul class="nav nav-tabs flex-column">-->
+<!--              <li class="nav-item">-->
+<!--                <a class="nav-link active show" data-bs-toggle="tab" href="#specials-tab-1">Modi sit est</a>-->
+<!--              </li>-->
+<!--              <li class="nav-item">-->
+<!--                <a class="nav-link" data-bs-toggle="tab" href="#specials-tab-2">Unde praesentium sed</a>-->
+<!--              </li>-->
+<!--              <li class="nav-item">-->
+<!--                <a class="nav-link" data-bs-toggle="tab" href="#specials-tab-3">Pariatur explicabo vel</a>-->
+<!--              </li>-->
+<!--              <li class="nav-item">-->
+<!--                <a class="nav-link" data-bs-toggle="tab" href="#specials-tab-4">Nostrum qui quasi</a>-->
+<!--              </li>-->
+<!--              <li class="nav-item">-->
+<!--                <a class="nav-link" data-bs-toggle="tab" href="#specials-tab-5">Iusto ut expedita aut</a>-->
+<!--              </li>-->
+<!--            </ul>-->
+<!--          </div>-->
+<!--          <div class="col-lg-9 mt-4 mt-lg-0">-->
+<!--            <div class="tab-content">-->
+<!--              <div class="tab-pane active show" id="specials-tab-1">-->
+<!--                <div class="row">-->
+<!--                  <div class="col-lg-8 details order-2 order-lg-1">-->
+<!--                    <h3>Architecto ut aperiam autem id</h3>-->
+<!--                    <p class="fst-italic">Qui laudantium consequatur laborum sit qui ad sapiente dila parde sonata raqer a videna mareta paulona marka</p>-->
+<!--                    <p>Et nobis maiores eius. Voluptatibus ut enim blanditiis atque harum sint. Laborum eos ipsum ipsa odit magni. Incidunt hic ut molestiae aut qui. Est repellat minima eveniet eius et quis magni nihil. Consequatur dolorem quaerat quos qui similique accusamus nostrum rem vero</p>-->
+<!--                  </div>-->
+<!--                  <div class="col-lg-4 text-center order-1 order-lg-2">-->
+<!--                    <img src="{% static 'assets/img/specials-1.png' %}" alt="" class="img-fluid">-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--              <div class="tab-pane" id="specials-tab-2">-->
+<!--                <div class="row">-->
+<!--                  <div class="col-lg-8 details order-2 order-lg-1">-->
+<!--                    <h3>Et blanditiis nemo veritatis excepturi</h3>-->
+<!--                    <p class="fst-italic">Qui laudantium consequatur laborum sit qui ad sapiente dila parde sonata raqer a videna mareta paulona marka</p>-->
+<!--                    <p>Ea ipsum voluptatem consequatur quis est. Illum error ullam omnis quia et reiciendis sunt sunt est. Non aliquid repellendus itaque accusamus eius et velit ipsa voluptates. Optio nesciunt eaque beatae accusamus lerode pakto madirna desera vafle de nideran pal</p>-->
+<!--                  </div>-->
+<!--                  <div class="col-lg-4 text-center order-1 order-lg-2">-->
+<!--                    <img src="{% static 'assets/img/specials-2.png' %}" alt="" class="img-fluid">-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--              <div class="tab-pane" id="specials-tab-3">-->
+<!--                <div class="row">-->
+<!--                  <div class="col-lg-8 details order-2 order-lg-1">-->
+<!--                    <h3>Impedit facilis occaecati odio neque aperiam sit</h3>-->
+<!--                    <p class="fst-italic">Eos voluptatibus quo. Odio similique illum id quidem non enim fuga. Qui natus non sunt dicta dolor et. In asperiores velit quaerat perferendis aut</p>-->
+<!--                    <p>Iure officiis odit rerum. Harum sequi eum illum corrupti culpa veritatis quisquam. Neque necessitatibus illo rerum eum ut. Commodi ipsam minima molestiae sed laboriosam a iste odio. Earum odit nesciunt fugiat sit ullam. Soluta et harum voluptatem optio quae</p>-->
+<!--                  </div>-->
+<!--                  <div class="col-lg-4 text-center order-1 order-lg-2">-->
+<!--                    <img src="assets/img/specials-3.png" alt="" class="img-fluid">-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--              <div class="tab-pane" id="specials-tab-4">-->
+<!--                <div class="row">-->
+<!--                  <div class="col-lg-8 details order-2 order-lg-1">-->
+<!--                    <h3>Fuga dolores inventore laboriosam ut est accusamus laboriosam dolore</h3>-->
+<!--                    <p class="fst-italic">Totam aperiam accusamus. Repellat consequuntur iure voluptas iure porro quis delectus</p>-->
+<!--                    <p>Eaque consequuntur consequuntur libero expedita in voluptas. Nostrum ipsam necessitatibus aliquam fugiat debitis quis velit. Eum ex maxime error in consequatur corporis atque. Eligendi asperiores sed qui veritatis aperiam quia a laborum inventore</p>-->
+<!--                  </div>-->
+<!--                  <div class="col-lg-4 text-center order-1 order-lg-2">-->
+<!--                    <img src="assets/img/specials-4.png" alt="" class="img-fluid">-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--              <div class="tab-pane" id="specials-tab-5">-->
+<!--                <div class="row">-->
+<!--                  <div class="col-lg-8 details order-2 order-lg-1">-->
+<!--                    <h3>Est eveniet ipsam sindera pad rone matrelat sando reda</h3>-->
+<!--                    <p class="fst-italic">Omnis blanditiis saepe eos autem qui sunt debitis porro quia.</p>-->
+<!--                    <p>Exercitationem nostrum omnis. Ut reiciendis repudiandae minus. Omnis recusandae ut non quam ut quod eius qui. Ipsum quia odit vero atque qui quibusdam amet. Occaecati sed est sint aut vitae molestiae voluptate vel</p>-->
+<!--                  </div>-->
+<!--                  <div class="col-lg-4 text-center order-1 order-lg-2">-->
+<!--                    <img src="assets/img/specials-5.png" alt="" class="img-fluid">-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </div>-->
+
+<!--      </div>-->
+
+<!--    </section>&lt;!&ndash; /Specials Section &ndash;&gt;-->
+
+    <!-- Events Section -->
+<!--    <section id="events" class="events section">-->
+
+<!--      <img class="slider-bg" src="{% static 'assets/img/events-bg.jpg' %}" alt="" data-aos="fade-in">-->
+
+<!--      <div class="container">-->
+
+<!--        <div class="swiper init-swiper" data-aos="fade-up" data-aos-delay="100">-->
+<!--          <script type="application/json" class="swiper-config">-->
+<!--            {-->
+<!--              "loop": true,-->
+<!--              "speed": 600,-->
+<!--              "autoplay": {-->
+<!--                "delay": 5000-->
+<!--              },-->
+<!--              "slidesPerView": "auto",-->
+<!--              "pagination": {-->
+<!--                "el": ".swiper-pagination",-->
+<!--                "type": "bullets",-->
+<!--                "clickable": true-->
+<!--              }-->
+<!--            }-->
+<!--          </script>-->
+<!--          <div class="swiper-wrapper">-->
+
+<!--            <div class="swiper-slide">-->
+<!--              <div class="row gy-4 event-item">-->
+<!--                <div class="col-lg-6">-->
+<!--                  <img src="assets/img/events-slider/events-slider-1.jpg" class="img-fluid" alt="">-->
+<!--                </div>-->
+<!--                <div class="col-lg-6 pt-4 pt-lg-0 content">-->
+<!--                  <h3>Birthday Parties</h3>-->
+<!--                  <div class="price">-->
+<!--                    <p><span>$189</span></p>-->
+<!--                  </div>-->
+<!--                  <p class="fst-italic">-->
+<!--                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore-->
+<!--                    magna aliqua.-->
+<!--                  </p>-->
+<!--                  <ul>-->
+<!--                    <li><i class="bi bi-check2-circle"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></li>-->
+<!--                    <li><i class="bi bi-check2-circle"></i> <span>Duis aute irure dolor in reprehenderit in voluptate velit.</span></li>-->
+<!--                    <li><i class="bi bi-check2-circle"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></li>-->
+<!--                  </ul>-->
+<!--                  <p>-->
+<!--                    Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate-->
+<!--                    velit esse cillum dolore eu fugiat nulla pariatur-->
+<!--                  </p>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--            </div>&lt;!&ndash; End Slider item &ndash;&gt;-->
+
+<!--            <div class="swiper-slide">-->
+<!--              <div class="row gy-4 event-item">-->
+<!--                <div class="col-lg-6">-->
+<!--                  <img src="assets/img/events-slider/events-slider-2.jpg" class="img-fluid" alt="">-->
+<!--                </div>-->
+<!--                <div class="col-lg-6 pt-4 pt-lg-0 content">-->
+<!--                  <h3>Private Parties</h3>-->
+<!--                  <div class="price">-->
+<!--                    <p><span>$290</span></p>-->
+<!--                  </div>-->
+<!--                  <p class="fst-italic">-->
+<!--                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore-->
+<!--                    magna aliqua.-->
+<!--                  </p>-->
+<!--                  <ul>-->
+<!--                    <li><i class="bi bi-check2-circle"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></li>-->
+<!--                    <li><i class="bi bi-check2-circle"></i> <span>Duis aute irure dolor in reprehenderit in voluptate velit.</span></li>-->
+<!--                    <li><i class="bi bi-check2-circle"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></li>-->
+<!--                  </ul>-->
+<!--                  <p>-->
+<!--                    Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate-->
+<!--                    velit esse cillum dolore eu fugiat nulla pariatur-->
+<!--                  </p>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--            </div>&lt;!&ndash; End Slider item &ndash;&gt;-->
+
+<!--            <div class="swiper-slide">-->
+<!--              <div class="row gy-4 event-item">-->
+<!--                <div class="col-lg-6">-->
+<!--                  <img src="assets/img/events-slider/events-slider-3.jpg" class="img-fluid" alt="">-->
+<!--                </div>-->
+<!--                <div class="col-lg-6 pt-4 pt-lg-0 content">-->
+<!--                  <h3>Custom Parties</h3>-->
+<!--                  <div class="price">-->
+<!--                    <p><span>$99</span></p>-->
+<!--                  </div>-->
+<!--                  <p class="fst-italic">-->
+<!--                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore-->
+<!--                    magna aliqua.-->
+<!--                  </p>-->
+<!--                  <ul>-->
+<!--                    <li><i class="bi bi-check2-circle"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></li>-->
+<!--                    <li><i class="bi bi-check2-circle"></i> <span>Duis aute irure dolor in reprehenderit in voluptate velit.</span></li>-->
+<!--                    <li><i class="bi bi-check2-circle"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></li>-->
+<!--                  </ul>-->
+<!--                  <p>-->
+<!--                    Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate-->
+<!--                    velit esse cillum dolore eu fugiat nulla pariatur-->
+<!--                  </p>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--            </div>&lt;!&ndash; End Slider item &ndash;&gt;-->
+
+<!--          </div>-->
+<!--          <div class="swiper-pagination"></div>-->
+<!--        </div>-->
+
+<!--      </div>-->
+
+<!--    </section>&lt;!&ndash; /Events Section &ndash;&gt;-->
+
+    <!-- Book A Table Section -->
+<!--    <section id="book-a-table" class="book-a-table section">-->
+
+<!--      &lt;!&ndash; Section Title &ndash;&gt;-->
+<!--      <div class="container section-title" data-aos="fade-up">-->
+<!--        <h2>RESERVATION</h2>-->
+<!--        <p>Book a Table</p>-->
+<!--      </div>&lt;!&ndash; End Section Title &ndash;&gt;-->
+
+<!--      <div class="container" data-aos="fade-up" data-aos-delay="100">-->
+
+<!--        <form action="forms/book-a-table.php" method="post" role="form" class="php-email-form">-->
+<!--          <div class="row gy-4">-->
+<!--            <div class="col-lg-4 col-md-6">-->
+<!--              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required="">-->
+<!--            </div>-->
+<!--            <div class="col-lg-4 col-md-6">-->
+<!--              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required="">-->
+<!--            </div>-->
+<!--            <div class="col-lg-4 col-md-6">-->
+<!--              <input type="text" class="form-control" name="phone" id="phone" placeholder="Your Phone" required="">-->
+<!--            </div>-->
+<!--            <div class="col-lg-4 col-md-6">-->
+<!--              <input type="date" name="date" class="form-control" id="date" placeholder="Date" required="">-->
+<!--            </div>-->
+<!--            <div class="col-lg-4 col-md-6">-->
+<!--              <input type="time" class="form-control" name="time" id="time" placeholder="Time" required="">-->
+<!--            </div>-->
+<!--            <div class="col-lg-4 col-md-6">-->
+<!--              <input type="number" class="form-control" name="people" id="people" placeholder="# of people" required="">-->
+<!--            </div>-->
+<!--          </div>-->
+
+<!--          <div class="form-group mt-3">-->
+<!--            <textarea class="form-control" name="message" rows="5" placeholder="Message"></textarea>-->
+<!--          </div>-->
+
+<!--          <div class="text-center mt-3">-->
+<!--            <div class="loading">Loading</div>-->
+<!--            <div class="error-message"></div>-->
+<!--            <div class="sent-message">Your booking request was sent. We will call back or send an Email to confirm your reservation. Thank you!</div>-->
+<!--            <button type="submit">Book a Table</button>-->
+<!--          </div>-->
+<!--        </form>&lt;!&ndash; End Reservation Form &ndash;&gt;-->
+
+<!--      </div>-->
+
+<!--    </section>&lt;!&ndash; /Book A Table Section &ndash;&gt;-->
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Fikrlar</h2>
+        <p>Mijozlarning biz haqimizdagi fikrlari</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="swiper init-swiper" data-speed="600" data-delay="5000" data-breakpoints="{ &quot;320&quot;: { &quot;slidesPerView&quot;: 1, &quot;spaceBetween&quot;: 40 }, &quot;1200&quot;: { &quot;slidesPerView&quot;: 3, &quot;spaceBetween&quot;: 40 } }">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              },
+              "breakpoints": {
+                "320": {
+                  "slidesPerView": 1,
+                  "spaceBetween": 40
+                },
+                "1200": {
+                  "slidesPerView": 3,
+                  "spaceBetween": 20
+                }
+              }
+            }
+          </script>
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item" "="">
+            <p>
+              <i class=" bi bi-quote quote-icon-left"></i>
+                <span>Bu restoranga birinchi kelishim edi va juda mamnun bo‘ldim. Taomlar juda mazali, muhit esa shinam va sokin. Albatta yana kelaman.</span>
+                <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+                <img src="{% static 'assets/img/jamshed-1.jpg' %}" class="testimonial-img" alt="">
+                <h3>Jamshed Sharipov</h3>
+              </div>
+            </div><!-- End testimonial item -->
+
+<!--            <div class="swiper-slide">-->
+<!--              <div class="testimonial-item">-->
+<!--                <p>-->
+<!--                  <i class="bi bi-quote quote-icon-left"></i>-->
+<!--                  <span>Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.</span>-->
+<!--                  <i class="bi bi-quote quote-icon-right"></i>-->
+<!--                </p>-->
+<!--                <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">-->
+<!--                <h3>Sara Wilsson</h3>-->
+<!--                <h4>Designer</h4>-->
+<!--              </div>-->
+<!--            </div>&lt;!&ndash; End testimonial item &ndash;&gt;-->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Xizmat ko‘rsatish darajasi juda yuqori. Buyurtmam tez tayyor bo‘ldi va taomlar haqiqatan ham juda mazali edi. Tavsiya qilaman!</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+                <img src="{% static 'assets/img/woman.jpg' %}" class="testimonial-img" alt="">
+                <h3>Marjona Azimova</h3>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Oila davrasida kechki ovqat uchun ajoyib joy. Interyer chiroyli, xodimlar esa juda xushmuomala. Hammasi yoqdi.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+                <img src="{% static 'assets/img/sherzod-1.jpg' %}" class="testimonial-img" alt="">
+                <h3>Sherzod Hakimov</h3>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Bu restoran taomlari sifati va xizmat darajasi bilan boshqalardan ajralib turadi. Do‘stlarimga ham tavsiya qildim.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+                <img src="{% static 'assets/img/aziz.jpg' %}" class="testimonial-img" alt="">
+                <h3>Aziz Ergashev</h3>
+              </div>
+            </div><!-- End testimonial item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+
+    </section><!-- /Testimonials Section -->
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Galleriya</h2>
+        <p>Restaranimizdan bazi rasmlar</p>
+      </div><!-- End Section Title -->
+
+      <div class="container-fluid" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row g-0">
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/gallery-5.jpg" class="glightbox" data-gallery="images-gallery">
+                <img src="{% static 'assets/img/gallery/gallery-5.jpg' %}" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div><!-- End Gallery Item -->
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="{% static 'assets/img/gallery/gallery-2.jpg' %}" class="glightbox" data-gallery="images-gallery">
+                <img src="{% static 'assets/img/gallery/gallery-2.jpg' %}" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div><!-- End Gallery Item -->
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/gallery-3.jpg" class="glightbox" data-gallery="images-gallery">
+                <img src="{% static 'assets/img/gallery/gallery-3.jpg' %}" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div><!-- End Gallery Item -->
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/gallery-4.jpg" class="glightbox" data-gallery="images-gallery">
+                <img src="{% static 'assets/img/gallery/gallery-4.jpg' %}" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div><!-- End Gallery Item -->
+
+  <!--          <div class="col-lg-3 col-md-4">-->
+  <!--            <div class="gallery-item">-->
+  <!--              <a href="assets/img/gallery/gallery-5.jpg" class="glightbox" data-gallery="images-gallery">-->
+  <!--                <img src="{% static 'assets/img/gallery/gallery-5.jpg' %}" alt="" class="img-fluid">-->
+  <!--              </a>-->
+  <!--            </div>-->
+  <!--          </div>&lt;!&ndash; End Gallery Item &ndash;&gt;-->
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/gallery-6.jpg" class="glightbox" data-gallery="images-gallery">
+                <img src="assets/img/gallery/gallery-6.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div><!-- End Gallery Item -->
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/gallery-7.jpg" class="glightbox" data-gallery="images-gallery">
+                <img src="assets/img/gallery/gallery-7.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div><!-- End Gallery Item -->
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/gallery-8.jpg" class="glightbox" data-gallery="images-gallery">
+                <img src="assets/img/gallery/gallery-8.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div><!-- End Gallery Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Gallery Section -->
+
+    <!-- Chefs Section -->
+<!--    <section id="chefs" class="chefs section">-->
+
+<!--      &lt;!&ndash; Section Title &ndash;&gt;-->
+<!--      <div class="container section-title" data-aos="fade-up">-->
+<!--        <h2>Team</h2>-->
+<!--        <p>Necessitatibus eius consequatur</p>-->
+<!--      </div>&lt;!&ndash; End Section Title &ndash;&gt;-->
+
+<!--      <div class="container">-->
+
+<!--        <div class="row gy-4">-->
+
+<!--          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">-->
+<!--            <div class="member">-->
+<!--              <img src="assets/img/chefs/chefs-1.jpg" class="img-fluid" alt="">-->
+<!--              <div class="member-info">-->
+<!--                <div class="member-info-content">-->
+<!--                  <h4>Walter White</h4>-->
+<!--                  <span>Master Chef</span>-->
+<!--                </div>-->
+<!--                <div class="social">-->
+<!--                  <a href=""><i class="bi bi-twitter-x"></i></a>-->
+<!--                  <a href=""><i class="bi bi-facebook"></i></a>-->
+<!--                  <a href=""><i class="bi bi-instagram"></i></a>-->
+<!--                  <a href=""><i class="bi bi-linkedin"></i></a>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </div>&lt;!&ndash; End Team Member &ndash;&gt;-->
+
+<!--          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">-->
+<!--            <div class="member">-->
+<!--              <img src="assets/img/chefs/chefs-2.jpg" class="img-fluid" alt="">-->
+<!--              <div class="member-info">-->
+<!--                <div class="member-info-content">-->
+<!--                  <h4>Sarah Jhonson</h4>-->
+<!--                  <span>Patissier</span>-->
+<!--                </div>-->
+<!--                <div class="social">-->
+<!--                  <a href=""><i class="bi bi-twitter-x"></i></a>-->
+<!--                  <a href=""><i class="bi bi-facebook"></i></a>-->
+<!--                  <a href=""><i class="bi bi-instagram"></i></a>-->
+<!--                  <a href=""><i class="bi bi-linkedin"></i></a>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </div>&lt;!&ndash; End Team Member &ndash;&gt;-->
+
+<!--          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">-->
+<!--            <div class="member">-->
+<!--              <img src="assets/img/chefs/chefs-3.jpg" class="img-fluid" alt="">-->
+<!--              <div class="member-info">-->
+<!--                <div class="member-info-content">-->
+<!--                  <h4>William Anderson</h4>-->
+<!--                  <span>Cook</span>-->
+<!--                </div>-->
+<!--                <div class="social">-->
+<!--                  <a href=""><i class="bi bi-twitter-x"></i></a>-->
+<!--                  <a href=""><i class="bi bi-facebook"></i></a>-->
+<!--                  <a href=""><i class="bi bi-instagram"></i></a>-->
+<!--                  <a href=""><i class="bi bi-linkedin"></i></a>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </div>&lt;!&ndash; End Team Member &ndash;&gt;-->
+
+<!--        </div>-->
+
+<!--      </div>-->
+
+<!--    </section>&lt;!&ndash; /Chefs Section &ndash;&gt;-->
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Bog'lanish</h2>
+        <p>Biz bilan bog'laning</p>
+      </div><!-- End Section Title -->
+
+      <div class="mb-5" data-aos="fade-up" data-aos-delay="200">
+<!--        <iframe style="border:0; width: 100%; height: 400px;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d48389.78314118045!2d-74.006138!3d40.710059!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1sen!2sus!4v1676961268712!5m2!1sen!2sus" frameborder="0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>-->
+<!--        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d770.555524682964!2d66.95654812794903!3d39.641909582114344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2s!4v1771433212498!5m2!1sru!2s" height="100%" allowfullscreen="" frameborder="0" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>-->
+            <div style="position:relative;overflow:hidden;"><a href="https://yandex.uz/maps/org/110962791267/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Amande</a><a href="https://yandex.uz/maps/10334/samarkand/category/restaurant/184106394/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:14px;">Ресторан в Самарканде</a><iframe src="https://yandex.uz/map-widget/v1/?ll=66.957115%2C39.641981&mode=poi&poi%5Bpoint%5D=66.956544%2C39.642195&poi%5Buri%5D=ymapsbm1%3A%2F%2Forg%3Foid%3D110962791267&tab=related&z=20.35" width="100%" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+
+      </div><!-- End Google Maps -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4">
+            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+              <i class="bi bi-geo-alt flex-shrink-0"></i>
+              <div>
+                <h3>Joylashuv</h3>
+                <p>Buxoriy mahalla fuqarolar yigʻini, Obod ko'chasi</p>
+              </div>
+            </div><!-- End Info Item -->
+
+            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+              <i class="bi bi-stopwatch flex-shrink-0"></i>
+              <div>
+                <h3>Ochilish vaqti</h3>
+                <p>Harkuni:<br>08:00 - 02:00</p>
+              </div>
+            </div><!-- End Info Item -->
+
+            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+              <i class="bi bi-telephone flex-shrink-0"></i>
+              <div>
+                <h3>Telefon nomer</h3>
+                <p>+998 (90) 644-07-07</p>
+              </div>
+            </div><!-- End Info Item -->
+
+            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="500">
+              <i class="bi bi-envelope flex-shrink-0"></i>
+              <div>
+                <h3>Bizning emailimiz</h3>
+                <p>ergashevazizdev@gmail.com</p>
+              </div>
+            </div><!-- End Info Item -->
+
+          </div>
+
+          <div class="col-lg-8">
+            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+              <div class="row gy-4">
+
+                <div class="col-md-6">
+                  <input type="text" name="name" class="form-control" placeholder="Ismingiz" required="">
+                </div>
+
+                <div class="col-md-6 ">
+                  <input type="email" class="form-control" name="email" placeholder="Emailingiz" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <input type="text" class="form-control" name="subject" placeholder="Mavzu" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <textarea class="form-control" name="message" rows="6" placeholder="Matn" required=""></textarea>
+                </div>
+
+                <div class="col-md-12 text-center">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div>
+
+                  <button type="submit">Yuborish</button>
+                </div>
+
+              </div>
+            </form>
+          </div><!-- End Contact Form -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Contact Section -->
+
+  </main>
+
+  <footer id="footer" class="footer">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-10 col-md-6 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <img src="{% static 'assets/img/logooo.png' %}" alt="" width="70px" height="100px">
+          </a>
+          <div class="footer-contact pt-3">
+            <p><strong>Manzil:</strong>Buxoriy mahalla fuqarolar yigʻini, Obod ko'chasi</p>
+            <p class="mt-3"><strong>Telefon:</strong> <span>+998 (90) 644-07-07</span></p>
+            <p><strong>Email:</strong> <span>ergashevdev@gmail.com</span></p>
+          </div>
+          <div class="social-links d-flex mt-4">
+<!--            <a href=""><i class="bi bi-twitter-x"></i></a>-->
+<!--            <a href=""><i class="bi bi-facebook"></i></a>-->
+            <a href="https://www.instagram.com/amande_restaurant/"><i class="bi bi-instagram"></i></a>
+            <a href="https://t.me/Amande_restaurand"><i class="bi bi-telegram"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Foydali linklar</h4>
+          <ul>
+            <li><a href="#hero" class="active">Bosh sahifa<br></a></li>
+            <li><a href="#about">Biz haqimizda</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#testimonials">Fikrlar</a></li>
+            <li><a href="#gallery">Galleriya</a></li>
+            <li><a href="#contact">Bog'lanish</a></li>
+          </ul>
+        </div>
+
+<!--        <div class="col-lg-2 col-md-3 footer-links">-->
+<!--          <h4>Our Services</h4>-->
+<!--          <ul>-->
+<!--            <li><a href="#">Web Design</a></li>-->
+<!--            <li><a href="#">Web Development</a></li>-->
+<!--            <li><a href="#">Product Management</a></li>-->
+<!--            <li><a href="#">Marketing</a></li>-->
+<!--            <li><a href="#">Graphic Design</a></li>-->
+<!--          </ul>-->
+<!--        </div>-->
+
+<!--        <div class="col-lg-4 col-md-12 footer-newsletter">-->
+<!--          <h4>Our Newsletter</h4>-->
+<!--          <p>Subscribe to our newsletter and receive the latest news about our products and services!</p>-->
+<!--          <form action="forms/newsletter.php" method="post" class="php-email-form">-->
+<!--            <div class="newsletter-form"><input type="email" name="email"><input type="submit" value="Subscribe"></div>-->
+<!--            <div class="loading">Loading</div>-->
+<!--            <div class="error-message"></div>-->
+<!--            <div class="sent-message">Your subscription request has been sent. Thank you!</div>-->
+<!--          </form>-->
+<!--        </div>-->
+
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© 2026  — <script>document.write(new Date().getFullYear())</script> Barcha huquqlar himoyalangan</p>
+      <div class="credits">
+        <a href="https://t.me/ergashev_dev" target="_blank" >Dastrurchi</a>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/php-email-form/validate.js' %}"></script>
+  <script src="{% static 'assets/vendor/aos/aos.js' %}"></script>
+  <script src="{% static 'assets/vendor/glightbox/js/glightbox.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/imagesloaded/imagesloaded.pkgd.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/swiper/swiper-bundle.min.js' %}"></script>
+
+  <!-- Main JS File -->
+  <script src="{% static 'assets/js/main.js' %}"></script>
+
+</body>
+
+</html>

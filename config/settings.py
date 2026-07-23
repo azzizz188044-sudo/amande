@@ -29,14 +29,23 @@ ALLOWED_HOSTS = ['amande.uz', 'www.amande.uz', 'localhost', '127.0.0.1', '127.0.
 
 
 # Application definition
+LANGUAGE_CODE = "uz"
+
+TIME_ZONE = "Asia/Tashkent"
+
+USE_I18N = True
+
+USE_TZ = True
 
 INSTALLED_APPS = [
+    'jazzmin',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.humanize',
     'amande',
 ]
 
@@ -120,8 +129,41 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     BASE_DIR / 'static'
 ]
+MEDIA_URL = "/media/"
+
+MEDIA_ROOT = BASE_DIR / "media"
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+JAZZMIN_SETTINGS = {
+
+    "site_title": "Restaurant Admin",
+
+    "site_header": "Restaurant Admin",
+
+    "site_brand": "Restoran",
+
+    "welcome_sign": "Restoran boshqaruv paneli",
+
+    "show_sidebar": True,
+
+    "navigation_expanded": True,
+
+    "hide_apps": [
+        "auth",
+    ],
+
+    "icons": {
+
+        "amande.menuitem":
+            "fas fa-utensils",
+
+        "amande.menucategory":
+            "fas fa-list",
+
+    },
+
+}

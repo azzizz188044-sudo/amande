@@ -1,4 +1,5 @@
-{% load static %}
+  {% load static %}
+  {% load humanize %}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -195,6 +196,140 @@
 
     </section><!-- /About Section -->
 
+    <section id="menu" class="menu section">
+
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+
+    <h2>Menu</h2>
+
+    <p>
+      Bizning mazzali menuyimiz
+    </p>
+
+  </div>
+  <!-- End Section Title -->
+
+
+  <div class="container">
+
+
+    <!-- Menu Filters -->
+    <div
+      class="row"
+      data-aos="fade-up"
+      data-aos-delay="100"
+    >
+
+      <div class="col-lg-12 d-flex justify-content-center">
+
+        <ul class="menu-filters">
+
+
+          <!-- ALL -->
+          <li
+            class="filter-active"
+            data-category="all"
+          >
+
+            Barchasi
+
+          </li>
+
+
+          <!-- CATEGORIES -->
+          {% for category in categories %}
+
+          <li
+            data-category="{{ category.id }}"
+          >
+
+            {{ category.name }}
+
+          </li>
+
+          {% endfor %}
+
+
+        </ul>
+
+      </div>
+
+    </div>
+    <!-- End Menu Filters -->
+
+
+    <!-- Menu Container -->
+    <div
+      id="menu-items-container"
+      class="row"
+      data-aos="fade-up"
+      data-aos-delay="200"
+    >
+
+
+      {% for item in menu_items %}
+
+
+      <div
+        class="col-lg-6 menu-item"
+        data-category="{{ item.category.id }}"
+      >
+
+
+        <!-- Image -->
+        <img
+          src="{{ item.image.url }}"
+          class="menu-img"
+          alt="{{ item.name }}"
+        >
+
+
+        <!-- Menu Content -->
+        <div class="menu-content">
+
+          <a href="#">
+
+            {{ item.name }}
+
+          </a>
+
+          <span>
+              {{ item.price|floatformat:0|intcomma }}
+          </span>
+
+        </div>
+
+
+        <!-- Description -->
+        <div class="menu-ingredients">
+
+          {{ item.description }}
+
+        </div>
+
+
+      </div>
+
+
+      {% endfor %}
+
+
+    </div>
+    <!-- End Menu Container -->
+
+
+    <!-- Pagination -->
+    <div
+      id="menu-pagination"
+      class="menu-pagination text-center mt-4"
+    ></div>
+
+
+  </div>
+
+</section>
+
     <!-- Why Us Section -->
     <section id="why-us" class="why-us section">
 
@@ -237,126 +372,6 @@
       </div>
 
     </section><!-- /Why Us Section -->
-
-    <!-- Menu Section -->
-    <section id="menu" class="menu section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Menu</h2>
-        <p>Bizning mazzali menuyimiz</p>
-      </div><!-- End Section Title -->
-
-      <div class="container isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
-
-        <div class="row" data-aos="fade-up" data-aos-delay="100">
-          <div class="col-lg-12 d-flex justify-content-center">
-            <ul class="menu-filters isotope-filters">
-              <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-starters">Starters</li>
-              <li data-filter=".filter-salads">Salads</li>
-              <li data-filter=".filter-specialty">Specialty</li>
-            </ul>
-          </div>
-        </div><!-- Menu Filters -->
-
-        <div class="row isotope-container" data-aos="fade-up" data-aos-delay="200">
-
-          <div class="col-lg-6 menu-item isotope-item filter-starters">
-            <img src="{% static 'assets/img/menu/lobster-bisque.jpg' %}" class="menu-img" alt="">
-            <div class="menu-content">
-              <a href="#">Lobster Bisque</a><span>$5.95</span>
-            </div>
-            <div class="menu-ingredients">
-              Lorem, deren, trataro, filede, nerada
-            </div>
-          </div><!-- Menu Item -->
-
-          <div class="col-lg-6 menu-item isotope-item filter-specialty">
-            <img src="{% static 'assets/img/menu/bread-barrel.jpg' %}" class="menu-img" alt="">
-            <div class="menu-content">
-              <a href="#">Bread Barrel</a><span>$6.95</span>
-            </div>
-            <div class="menu-ingredients">
-              Lorem, deren, trataro, filede, nerada
-            </div>
-          </div><!-- Menu Item -->
-
-          <div class="col-lg-6 menu-item isotope-item filter-starters">
-            <img src="assets/img/menu/cake.jpg" class="menu-img" alt="">
-            <div class="menu-content">
-              <a href="#">Crab Cake</a><span>$7.95</span>
-            </div>
-            <div class="menu-ingredients">
-              A delicate crab cake served on a toasted roll with lettuce and tartar sauce
-            </div>
-          </div><!-- Menu Item -->
-
-          <div class="col-lg-6 menu-item isotope-item filter-salads">
-            <img src="assets/img/menu/caesar.jpg" class="menu-img" alt="">
-            <div class="menu-content">
-              <a href="#">Caesar Selections</a><span>$8.95</span>
-            </div>
-            <div class="menu-ingredients">
-              Lorem, deren, trataro, filede, nerada
-            </div>
-          </div><!-- Menu Item -->
-
-          <div class="col-lg-6 menu-item isotope-item filter-specialty">
-            <img src="assets/img/menu/tuscan-grilled.jpg" class="menu-img" alt="">
-            <div class="menu-content">
-              <a href="#">Tuscan Grilled</a><span>$9.95</span>
-            </div>
-            <div class="menu-ingredients">
-              Grilled chicken with provolone, artichoke hearts, and roasted red pesto
-            </div>
-          </div><!-- Menu Item -->
-
-          <div class="col-lg-6 menu-item isotope-item filter-starters">
-            <img src="assets/img/menu/mozzarella.jpg" class="menu-img" alt="">
-            <div class="menu-content">
-              <a href="#">Mozzarella Stick</a><span>$4.95</span>
-            </div>
-            <div class="menu-ingredients">
-              Lorem, deren, trataro, filede, nerada
-            </div>
-          </div><!-- Menu Item -->
-
-          <div class="col-lg-6 menu-item isotope-item filter-salads">
-            <img src="assets/img/menu/greek-salad.jpg" class="menu-img" alt="">
-            <div class="menu-content">
-              <a href="#">Greek Salad</a><span>$9.95</span>
-            </div>
-            <div class="menu-ingredients">
-              Fresh spinach, crisp romaine, tomatoes, and Greek olives
-            </div>
-          </div><!-- Menu Item -->
-
-          <div class="col-lg-6 menu-item isotope-item filter-salads">
-            <img src="assets/img/menu/spinach-salad.jpg" class="menu-img" alt="">
-            <div class="menu-content">
-              <a href="#">Spinach Salad</a><span>$9.95</span>
-            </div>
-            <div class="menu-ingredients">
-              Fresh spinach with mushrooms, hard boiled egg, and warm bacon vinaigrette
-            </div>
-          </div><!-- Menu Item -->
-
-          <div class="col-lg-6 menu-item isotope-item filter-specialty">
-            <img src="assets/img/menu/lobster-roll.jpg" class="menu-img" alt="">
-            <div class="menu-content">
-              <a href="#">Lobster Roll</a><span>$12.95</span>
-            </div>
-            <div class="menu-ingredients">
-              Plump lobster meat, mayo and crisp lettuce on a toasted bulky roll
-            </div>
-          </div><!-- Menu Item -->
-
-        </div><!-- Menu Container -->
-
-      </div>
-
-    </section><!-- /Menu Section -->
 
     <!-- Specials Section -->
 <!--    <section id="specials" class="specials section">-->
@@ -622,6 +637,86 @@
 
 <!--    </section>&lt;!&ndash; /Book A Table Section &ndash;&gt;-->
 
+    <section id="gallery" class="gallery section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Galleriya</h2>
+        <p>Restaranimizdan bazi rasmlar</p>
+      </div><!-- End Section Title -->
+
+      <div class="container-fluid" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row g-0">
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/gallery-5.jpg" class="glightbox" data-gallery="images-gallery">
+                <img src="{% static 'assets/img/gallery/gallery-5.jpg' %}" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div><!-- End Gallery Item -->
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="{% static 'assets/img/gallery/gallery-2.jpg' %}" class="glightbox" data-gallery="images-gallery">
+                <img src="{% static 'assets/img/gallery/gallery-2.jpg' %}" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div><!-- End Gallery Item -->
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/gallery-3.jpg" class="glightbox" data-gallery="images-gallery">
+                <img src="{% static 'assets/img/gallery/gallery-3.jpg' %}" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div><!-- End Gallery Item -->
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/gallery-4.jpg" class="glightbox" data-gallery="images-gallery">
+                <img src="{% static 'assets/img/gallery/gallery-4.jpg' %}" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div><!-- End Gallery Item -->
+
+  <!--          <div class="col-lg-3 col-md-4">-->
+  <!--            <div class="gallery-item">-->
+  <!--              <a href="assets/img/gallery/gallery-5.jpg" class="glightbox" data-gallery="images-gallery">-->
+  <!--                <img src="{% static 'assets/img/gallery/gallery-5.jpg' %}" alt="" class="img-fluid">-->
+  <!--              </a>-->
+  <!--            </div>-->
+  <!--          </div>&lt;!&ndash; End Gallery Item &ndash;&gt;-->
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/gallery-6.jpg" class="glightbox" data-gallery="images-gallery">
+                <img src="assets/img/gallery/gallery-6.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div><!-- End Gallery Item -->
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/gallery-7.jpg" class="glightbox" data-gallery="images-gallery">
+                <img src="assets/img/gallery/gallery-7.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div><!-- End Gallery Item -->
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/gallery-8.jpg" class="glightbox" data-gallery="images-gallery">
+                <img src="assets/img/gallery/gallery-8.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div><!-- End Gallery Item -->
+
+        </div>
+
+      </div>
+
+    </section>
     <!-- Testimonials Section -->
     <section id="testimonials" class="testimonials section">
 
@@ -731,86 +826,7 @@
     </section><!-- /Testimonials Section -->
 
     <!-- Gallery Section -->
-    <section id="gallery" class="gallery section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Galleriya</h2>
-        <p>Restaranimizdan bazi rasmlar</p>
-      </div><!-- End Section Title -->
-
-      <div class="container-fluid" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row g-0">
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item">
-              <a href="assets/img/gallery/gallery-5.jpg" class="glightbox" data-gallery="images-gallery">
-                <img src="{% static 'assets/img/gallery/gallery-5.jpg' %}" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div><!-- End Gallery Item -->
-
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item">
-              <a href="{% static 'assets/img/gallery/gallery-2.jpg' %}" class="glightbox" data-gallery="images-gallery">
-                <img src="{% static 'assets/img/gallery/gallery-2.jpg' %}" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div><!-- End Gallery Item -->
-
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item">
-              <a href="assets/img/gallery/gallery-3.jpg" class="glightbox" data-gallery="images-gallery">
-                <img src="{% static 'assets/img/gallery/gallery-3.jpg' %}" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div><!-- End Gallery Item -->
-
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item">
-              <a href="assets/img/gallery/gallery-4.jpg" class="glightbox" data-gallery="images-gallery">
-                <img src="{% static 'assets/img/gallery/gallery-4.jpg' %}" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div><!-- End Gallery Item -->
-
-  <!--          <div class="col-lg-3 col-md-4">-->
-  <!--            <div class="gallery-item">-->
-  <!--              <a href="assets/img/gallery/gallery-5.jpg" class="glightbox" data-gallery="images-gallery">-->
-  <!--                <img src="{% static 'assets/img/gallery/gallery-5.jpg' %}" alt="" class="img-fluid">-->
-  <!--              </a>-->
-  <!--            </div>-->
-  <!--          </div>&lt;!&ndash; End Gallery Item &ndash;&gt;-->
-
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item">
-              <a href="assets/img/gallery/gallery-6.jpg" class="glightbox" data-gallery="images-gallery">
-                <img src="assets/img/gallery/gallery-6.jpg" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div><!-- End Gallery Item -->
-
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item">
-              <a href="assets/img/gallery/gallery-7.jpg" class="glightbox" data-gallery="images-gallery">
-                <img src="assets/img/gallery/gallery-7.jpg" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div><!-- End Gallery Item -->
-
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item">
-              <a href="assets/img/gallery/gallery-8.jpg" class="glightbox" data-gallery="images-gallery">
-                <img src="assets/img/gallery/gallery-8.jpg" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div><!-- End Gallery Item -->
-
-        </div>
-
-      </div>
-
-    </section><!-- /Gallery Section -->
+    <!-- /Gallery Section -->
 
     <!-- Chefs Section -->
 <!--    <section id="chefs" class="chefs section">-->
@@ -985,7 +1001,7 @@
     <div class="container footer-top">
       <div class="row gy-4">
         <div class="col-lg-10 col-md-6 footer-about">
-          <a href="index.html" class="logo d-flex align-items-center">
+          <a href="#" class="logo d-flex align-items-center">
             <img src="{% static 'assets/img/logooo.png' %}" alt="" width="70px" height="100px">
           </a>
           <div class="footer-contact pt-3">
@@ -1054,6 +1070,342 @@
   <div id="preloader"></div>
 
   <!-- Vendor JS Files -->
+  <script>
+
+document.addEventListener(
+  "DOMContentLoaded",
+  function () {
+
+
+    const filterButtons =
+      document.querySelectorAll(
+        ".menu-filters li"
+      );
+
+
+    const menuItems =
+      Array.from(
+        document.querySelectorAll(
+          ".menu-item"
+        )
+      );
+
+
+    const paginationContainer =
+      document.getElementById(
+        "menu-pagination"
+      );
+
+
+    const itemsPerPage = 6;
+
+
+    let currentCategory = "all";
+
+
+    let currentPage = 1;
+
+
+    function getFilteredItems() {
+
+      if (
+        currentCategory === "all"
+      ) {
+
+        return menuItems;
+
+      }
+
+
+      return menuItems.filter(
+        function (item) {
+
+          return item.dataset.category ===
+            currentCategory;
+
+        }
+      );
+
+    }
+
+
+    function showMenu() {
+
+
+      const filteredItems =
+        getFilteredItems();
+
+
+      const totalPages =
+        Math.ceil(
+          filteredItems.length /
+          itemsPerPage
+        );
+
+
+      if (
+        currentPage > totalPages &&
+        totalPages > 0
+      ) {
+
+        currentPage = totalPages;
+
+      }
+
+
+      const start =
+        (
+          currentPage - 1
+        ) *
+        itemsPerPage;
+
+
+      const end =
+        start +
+        itemsPerPage;
+
+
+      const currentItems =
+        filteredItems.slice(
+          start,
+          end
+        );
+
+
+      menuItems.forEach(
+        function (item) {
+
+          item.style.display =
+            "none";
+
+        }
+      );
+
+
+      currentItems.forEach(
+        function (item) {
+
+          item.style.display =
+            "";
+
+        }
+      );
+
+
+      createPagination(
+        totalPages
+      );
+
+    }
+
+
+    function createPagination(
+      totalPages
+    ) {
+
+
+      paginationContainer.innerHTML =
+        "";
+
+
+      if (
+        totalPages <= 1
+      ) {
+
+        return;
+
+      }
+
+
+      if (
+        currentPage > 1
+      ) {
+
+
+        const previousButton =
+          document.createElement(
+            "button"
+          );
+
+
+        previousButton.innerText =
+          "oldingi";
+
+
+        previousButton.addEventListener(
+          "click",
+          function () {
+
+            currentPage--;
+
+            showMenu();
+
+            scrollToMenu();
+
+          }
+        );
+
+
+        paginationContainer.appendChild(
+          previousButton
+        );
+
+      }
+
+
+      for (
+        let i = 1;
+        i <= totalPages;
+        i++
+      ) {
+
+
+        const pageButton =
+          document.createElement(
+            "button"
+          );
+
+
+        pageButton.innerText =
+          i;
+
+
+        if (
+          i === currentPage
+        ) {
+
+          pageButton.classList.add(
+            "active"
+          );
+
+        }
+
+
+        pageButton.addEventListener(
+          "click",
+          function () {
+
+            currentPage =
+              i;
+
+            showMenu();
+
+            scrollToMenu();
+
+          }
+        );
+
+
+        paginationContainer.appendChild(
+          pageButton
+        );
+
+      }
+
+
+      if (
+        currentPage < totalPages
+      ) {
+
+
+        const nextButton =
+          document.createElement(
+            "button"
+          );
+
+
+        nextButton.innerText =
+          "keyingi";
+
+
+        nextButton.addEventListener(
+          "click",
+          function () {
+
+            currentPage++;
+
+            showMenu();
+
+            scrollToMenu();
+
+          }
+        );
+
+
+        paginationContainer.appendChild(
+          nextButton
+        );
+
+      }
+
+    }
+
+
+    filterButtons.forEach(
+      function (button) {
+
+
+        button.addEventListener(
+          "click",
+          function () {
+
+
+            filterButtons.forEach(
+              function (item) {
+
+                item.classList.remove(
+                  "filter-active"
+                );
+
+              }
+            );
+
+
+            button.classList.add(
+              "filter-active"
+            );
+
+
+            currentCategory =
+              button.dataset.category;
+
+
+            currentPage =
+              1;
+
+
+            showMenu();
+
+
+            scrollToMenu();
+
+          }
+        );
+
+      }
+    );
+
+
+    function scrollToMenu() {
+
+      document
+        .getElementById("menu")
+        .scrollIntoView({
+          behavior: "smooth",
+          block: "start"
+        });
+
+    }
+
+
+    showMenu();
+
+
+  }
+
+);
+
+</script>
   <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
   <script src="{% static 'assets/vendor/php-email-form/validate.js' %}"></script>
   <script src="{% static 'assets/vendor/aos/aos.js' %}"></script>
